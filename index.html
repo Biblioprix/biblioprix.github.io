@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Biblioprix - Scrapeur de livres d'occasion</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.14/dist/jquery.bxslider.min.css">
 <link rel="stylesheet" href="css/animate.css">
 <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
 <link rel="icon" type="image/x-icon" href="images/favicon.ico">
@@ -14,9 +14,31 @@
 <link rel="stylesheet" type="text/css" href="style.css"/>
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"> -->
 <!-- Font Google -->
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org/",
+    "@type": "Organization",
+    "name": "Biblioprix",
+    "logo": "https://biblioprix.fr/images/logotest.png",
+    "url": "https://biblioprix.fr/",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "France"
+    }
+  }
+  </script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="canonical" href="https://biblioprix.fr/" />
+<meta property="og:title" content="Biblioprix - Scrapeur de livres d'occasion" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://biblioprix.fr/" />
+<meta property="og:image" content="https://biblioprix.fr/images/ogimage.PNG" />
+<meta property="og:description" content="Découvrez Biblioprix, le spécialiste du scraping de livres d'occasion pour vous garantir les prix les plus bas. Importez vos listes d'ISBN et laissez notre outil analyser plus d'une dizaine de sites. Inscrivez-vous pour une démo et commencez à maximiser vos économies dès aujourd'hui !" />
+<meta property="og:site_name" content="Biblioprix - Scrapeur de livres d'occasion" />
+<meta name="keywords" content="Biblioprix, achat revente livres, livres d'occasion, meilleur prix livres, scanner ISBN, comparateur prix livres, librairie en ligne, économiser sur livres, marché livre occasion, scraping livres, logiciel scraping livres, outil recherche livre, trouver livres pas chers, ISBN livres d'occasion, analyse prix livres" />
+<meta name="description" content="Découvrez Biblioprix, le spécialiste du scraping de livres d'occasion pour vous garantir les prix les plus bas. Importez vos listes d'ISBN et laissez notre outil analyser plus d'une dizaine de sites. Inscrivez-vous pour une démo et commencez à maximiser vos économies dès aujourd'hui !">
 </head>
 
 <body>
@@ -47,17 +69,17 @@
       <div class="row">
         <div class="col-md-8 col-sm-12">
           <div class="banner-text">
-            <h2 class="white">Dénichez les Prix Bas avec Biblioprix</h2>
-            <h6 class="white">Le Spécialiste du Livre d'Occasion</h6>
+            <h1 class="white">Dénichez les Prix Bas avec Biblioprix</h2>
+            <h2 class="white">Le Spécialiste du Livre d'Occasion</h6>
             <p class="banner-text white">Trouvez les meilleures affaires en quelques clics avec Biblioprix, votre assistant dédié à la recherche de livres d'occasion. Importez vos listes d'ISBN et laissez l'outil parcourir plus d'une dizaine de sites revendeurs pour vous, identifiant automatiquement les offres les plus avantageuses.</p>
             
           </div>
         </div>
-        <div class="col-md-4 col-sm-12"> <img src="images/iphone12.png" class="img-fluid wow fadeInUp"/> </div>
+        <div class="col-md-4 col-sm-12"> <img src="images/iphone12.png" alt="Image d'iphone avec Biblioprix" class="img-fluid wow fadeInUp"/> </div>
       </div>
     </div>
   </div>
-  <span class="svg-wave"> <img class="svg-hero" src="images/applight-wave.svg"> </span> </section>
+  <span class="svg-wave"> <img class="svg-hero" alt="wave" src="images/applight-wave.svg"> </span> </section>
 
 <!-------Banner End-------> 
 
@@ -154,7 +176,7 @@
               </div>
             </div>
             <div class="col-md-4 d-none d-md-block d-lg-block">
-              <div class="feature-mobile"> <img src="images/iphone5.png" class="img-fluid wow fadeInUp"/> </div>
+              <div class="feature-mobile"> <img src="images/iphone5.png" alt="Image iphone avec appli biblioprix" class="img-fluid wow fadeInUp"/> </div>
             </div>
             <div class="col-md-4 col-sm-12">
               <div class="media single-feature wow fadeInUp" data-wow-delay="0.2s">
@@ -206,39 +228,57 @@
             <div class="slider">
               <div class="slider-item">
                 <div class="test-img"><img src="images/momox.png" alt="Placeholder" width="157" height="157"></div>
-                <div class="test-text"><span class="title"><span>Momox</span> </span> Quasi leader du marché, Momox offre constamment des restocks de livres d'occasion à des prix avantageux.</div>
+                <div class="test-text"><span class="title"><a href="https://www.momox-shop.fr/" target="_blank">
+                  <span>Momox</span>
+                </a> </span> Quasi leader du marché, Momox offre constamment des restocks de livres d'occasion à des prix avantageux.</div>
               </div>
               <div class="slider-item">
                 <div class="test-img"><img src="images/vinted.png" alt="Placeholder" width="157" height="157"></div>
-                <div class="test-text"><span class="title"><span>Vinted</span> </span> Sur Vinted, la culture des prix bas à 3 euros permet souvent de trouver des livres sous-évalués, une aubaine pour les connaisseurs.</div>
+                <div class="test-text"><span class="title"><a href="https://www.vinted.fr/" target="_blank">
+                  <span>Vinted</span>
+                </a> </span> Sur Vinted, la culture des prix bas à 3 euros permet souvent de trouver des livres sous-évalués, une aubaine pour les connaisseurs.</div>
               </div>
               <div class="slider-item">
                 <div class="test-img"><img src="images/Amazon_icon.png" alt="Placeholder" width="157" height="157"></div>
-                <div class="test-text"><span class="title"><span>Amazon</span> </span> Amazon est une plateforme idéale pour repérer de bonnes affaires auprès de nombreux revendeurs.</div>
+                <div class="test-text"><span class="title"><a href="https://www.amazon.com" target="_blank">
+                  <span>Amazon</span>
+                </a> Amazon est une plateforme idéale pour repérer de bonnes affaires auprès de nombreux revendeurs.</div>
               </div>
               <div class="slider-item">
                 <div class="test-img"><img src="images/gibert.png" alt="Placeholder" width="157" height="157"></div>
-                <div class="test-text"><span class="title"><span>Gibert</span> </span> Gibert est un excellent site de revente qui inclut aussi les stocks des magasins physiques, parfait pour chasser les bonnes affaires sur place.</div>
+                <div class="test-text"><span class="title"><a href="https://www.gibert.com/" target="_blank">
+                  <span>Gibert</span>
+                </a> </span> Gibert est un excellent site de revente qui inclut aussi les stocks des magasins physiques, parfait pour chasser les bonnes affaires sur place.</div>
               </div>
               <div class="slider-item">
                 <div class="test-img"><img src="images/rakuten.png" alt="Placeholder" width="157" height="157"></div>
-                <div class="test-text"><span class="title"><span>Rakuten</span> </span> Rakuten est le lieu de prédilection pour découvrir des perles rares à des prix compétitifs.</div>
+                <div class="test-text"><span class="title"><a href="https://fr.shopping.rakuten.com/" target="_blank">
+                  <span>Rakuten</span>
+                </a> </span> Rakuten est le lieu de prédilection pour découvrir des perles rares à des prix compétitifs.</div>
               </div>
               <div class="slider-item">
                 <div class="test-img"><img src="images/recyclivre.jpg" alt="Placeholder" width="157" height="157"></div>
-                <div class="test-text"><span class="title"><span>Recyclivre</span> </span> Acheter sur Recyclivre c’est non seulement économiser, mais aussi soutenir des associations caritatives.</div>
+                <div class="test-text"><span class="title"><a href="https://www.recyclivre.com/" target="_blank">
+                  <span>Recyclivre</span>
+                </a> </span> Acheter sur Recyclivre c’est non seulement économiser, mais aussi soutenir des associations caritatives.</div>
               </div>
               <div class="slider-item">
                 <div class="test-img"><img src="images/abebooks.png" alt="Placeholder" width="157" height="157"></div>
-                <div class="test-text"><span class="title"><span>Abebooks</span> </span> Abebooks est votre destination pour des livres rares et de collection, souvent à des prix qui restent accessibles.</div>
+                <div class="test-text"><span class="title"><a href="https://www.abebooks.fr/" target="_blank">
+                  <span>Abebooks</span>
+                </a> </span> Abebooks est votre destination pour des livres rares et de collection, souvent à des prix qui restent accessibles.</div>
               </div>
               <div class="slider-item">
                 <div class="test-img"><img src="images/ammareal.png" alt="Placeholder" width="157" height="157"></div>
-                <div class="test-text"><span class="title"><span>Ammareal</span> </span> Ammareal vous permet de faire des économies substantielles tout en contribuant à des causes sociales grâce à leur politique de dons.</div>
+                <div class="test-text"><span class="title"><a href="https://www.ammareal.fr/" target="_blank">
+                  <span>Ammareal</span>
+                </a> </span> Ammareal vous permet de faire des économies substantielles tout en contribuant à des causes sociales grâce à leur politique de dons.</div>
               </div>
               <div class="slider-item">
                 <div class="test-img"><img src="images/labourse.png" alt="Placeholder" width="157" height="157"></div>
-                <div class="test-text"><span class="title"><span>La Bourse aux Livres</span> </span> La Bourse aux Livres offre des tarifs attractifs sur une vaste sélection de livres, allant des dernières sorties aux classiques intemporels.</div>
+                <div class="test-text"><span class="title"><a href="https://shop.labourseauxlivres.fr/" target="_blank">
+                  <span>La Bourse aux Livres</span>
+                </a> </span> La Bourse aux Livres offre des tarifs attractifs sur une vaste sélection de livres, allant des dernières sorties aux classiques intemporels.</div>
               </div>
             </div>
           </div>
