@@ -52,7 +52,7 @@ h6 {
 	color: #fff;
 	text-transform: uppercase;
 	font-weight: 600;
-	font-size: 13px;
+	font-size: 16px;
 }
 .navbar .nav-item a:hover {
 	color: #5f0099;
@@ -454,6 +454,31 @@ input {
 	line-height: 20px;
 	margin: 0;
 }
+
+/* Style pour la section contact sur les grands écrans */
+@media (min-width: 768px) {
+    .contact-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;  
+    }
+    .contact-item {
+        margin: 0 60px; /* Augmentez la marge horizontale pour plus d'espacement */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Style général pour tous les écrans */
+.contact-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Garde les icônes et les textes alignés verticalement sur les petits écrans */
+}
+
 .download {
 	background: #7a60ff;
 	background: linear-gradient(to left, #7a60ff, #cd9ffa);
@@ -600,4 +625,48 @@ h3 {
 .footer-copy p {
 	font-size: 10px;
 }
+}
+.logo-img {
+    width: 190px;  /* Largeur désirée du logo */
+    height: 82px;  /* Hauteur désirée du logo */
+    object-fit: contain; /* Assure que l'image conserve ses proportions sans être coupée ou déformée */
+}
+
+.mosaic {
+	padding: 80px 0;
+	background: linear-gradient(to left, #7a60ff, #cd9ffa);
+  }
+  .mosaic .container {
+	max-width: 1200px; /* Ajuster selon les besoins */
+  }
+  .mosaic .row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center; /* Centrer les éléments */
+  }
+  .mosaic .col-md-2, .mosaic .col-sm-4, .mosaic .col-xs-6 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 20px; /* Espace entre les logos */
+  }
+  .mosaic .logo-img {
+    width: 157px; /* Taille fixe pour toutes les images pour uniformité */
+    height: 157px; /* Taille fixe pour toutes les images pour uniformité */
+    border: 5px solid white; /* Bordure blanche épaisse */
+    border-radius: 50%; /* Rend le bord parfaitement circulaire */
+    object-fit: cover; /* Assure que les images ne sont pas déformées */
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1); /* Optionnel: Ajoute une ombre pour un effet de profondeur */
+}
+  .mosaic .logo-title {
+    margin-top: 10px; /* Espace entre l'image et le texte */
+    color: white; /* Couleur du texte */
+    font-size: 14px; /* Taille du texte */
+    text-align: center; /* Centrage du texte */
+}
+  
+  .navbar-logo-img {
+    width: 190px;  
+    height: auto; 
+    object-fit: contain;  
 }
