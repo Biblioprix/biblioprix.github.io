@@ -61,24 +61,43 @@
   <!-- End Google Tag Manager (noscript) -->
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg">
-  <div class="container"> <a class="navbar-brand navbar-logo" href="#">
-    <img src="images/logotest.png" alt="logo" class="logo-img"> 
-</a>
- </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="fas fa-bars"></span> </button>
+  <div class="container"> 
+    <a class="navbar-brand navbar-logo" href="#">
+      <img src="images/logotest.png" alt="logo" class="logo-img"> 
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="fas fa-bars"></span>
+    </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item"> <a class="nav-link" href="" data-scroll-nav="0" title="Retourner à l'accueil">Accueil</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="1" title="En savoir plus sur nous">À propos</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="2" title="Découvrez nos fonctionnalités">Fonctionnalités</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="3">Tarifs</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="4" title="Voir les sites que nous scrapons">Sites scrapés</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="5" title="Foire aux questions">FAQ</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="6" title="Planifiez une démonstration avec nous">Planifiez une démo</a> </li>
+        <li class="nav-item"> <a class="nav-get-link" href="" data-scroll-nav="0" title="Retourner à l'accueil" data-fr="Accueil" data-en="Home">Accueil</a> </li>
+<li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="1" title="En savoir plus sur nous" data-fr="À propos" data-en="About">À propos</a> </li>
+<li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="2" title="Découvrez nos fonctionnalités" data-fr="Fonctionnalités" data-en="Features">Fonctionnalités</a> </li>
+<li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="3" title="Voir nos tarifs" data-fr="Tarifs" data-en="Pricing">Tarifs</a> </li>
+<li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="4" title="Voir les sites que nous scrapons" data-fr="Sites scrapés" data-en="Scraped Sites">Sites scrapés</a> </li>
+<li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="5" title="Foire aux questions" data-fr="FAQ" data-en="FAQ">FAQ</a> </li>
+<li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="6" title="Planifiez une démonstration avec nous" data-fr="Planifiez une démo" data-en="Schedule a Demo">Planifiez une démo</a> </li>
+
+        <!-- Menu Langue -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img src="images/fr.png" alt="Français" class="flag-icon"> <!-- Drapeau Français visible initialement -->
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#" onclick="setLanguage('fr')">
+              <img src="images/fr.png" alt="Français" class="flag-icon"> <!-- Option Français -->
+            </a>
+            <a class="dropdown-item" href="#" onclick="setLanguage('en')">
+              <img src="images/en.png" alt="English" class="flag-icon"> <!-- Option Anglais -->
+            </a>
+          </div>
+        </li>
+        
       </ul>
     </div>
   </div>
 </nav>
+
 <!-- End Navbar --> 
 <!-------Banner Start------->
 <section class="banner" data-scroll-index='0'>
@@ -87,9 +106,10 @@
       <div class="row">
         <div class="col-md-8 col-sm-12">
           <div class="banner-text">
-            <h1 class="white">Dénichez les Prix Bas avec Biblioprix</h2>
-            <h2 class="white">Le Spécialiste du Livre d'Occasion</h6>
-            <p class="banner-text white">Trouvez les meilleures affaires en quelques clics avec Biblioprix, votre assistant dédié à la recherche de livres d'occasion. Importez vos listes d'ISBN et laissez l'outil parcourir plus d'une dizaine de sites revendeurs pour vous, identifiant automatiquement les offres les plus avantageuses.</p>
+            <h1 class="white" data-fr="Dénichez les Prix Bas avec Biblioprix" data-en="Find Low Prices with Biblioprix">Dénichez les Prix Bas avec Biblioprix</h1>
+            
+            <h2 class="white" data-fr="Le Spécialiste du Livre d'Occasion" data-en="The Used Book Specialist">Le Spécialiste du Livre d'Occasion</h6>
+            <p class="banner-text white" data-fr="Trouvez les meilleures affaires en quelques clics avec Biblioprix, votre assistant dédié à la recherche de livres d'occasion. Importez vos listes d'ISBN et laissez l'outil parcourir plus d'une dizaine de sites revendeurs pour vous, identifiant automatiquement les offres les plus avantageuses." data-en="Find the best deals in just a few clicks with Biblioprix, your dedicated used book search assistant. Import your ISBN lists and let the tool browse over a dozen reseller sites for you, automatically identifying the best deals.">Trouvez les meilleures affaires en quelques clics avec Biblioprix, votre assistant dédié à la recherche de livres d'occasion. Importez vos listes d'ISBN et laissez l'outil parcourir plus d'une dizaine de sites revendeurs pour vous, identifiant automatiquement les offres les plus avantageuses.</p>
             
           </div>
         </div>
@@ -108,32 +128,32 @@
     <div class="row">
       <div class="col-md-12">
         <div class="sectioner-header text-center">
-          <h3>À propos</h3>
+          <h3 data-fr="À propos" data-en="About">À propos</h3>
           <span class="line"></span>
-          <p>Idéal pour les professionnels de l'achat-revente, Biblioprix transforme la manière dont vous achetez vos livres, en maximisant vos économies et en optimisant votre temps.</p>
+          <p data-fr="Idéal pour les professionnels de l'achat-revente, Biblioprix transforme la manière dont vous achetez vos livres, en maximisant vos économies et en optimisant votre temps." data-en="Ideal for buy-to-let professionals, Biblioprix transforms the way you buy books, maximizing your savings and optimizing your time.">Idéal pour les professionnels de l'achat-revente, Biblioprix transforme la manière dont vous achetez vos livres, en maximisant vos économies et en optimisant votre temps.</p>
         </div>
         <div class="section-content text-center">
           <div class="row">
             <div class="col-md-4">
               <div class="icon-box wow fadeInUp" data-wow-delay="0.2s"> <i class="fa fa-life-ring" aria-hidden="true"></i>
                 <h5>Support</h5>
-                <p>Support réactif, corrections en moins de 24h.</p>
+                <p data-fr="Support réactif, corrections en moins de 24h." data-en="Responsive support, corrections in less than 24 hours.">Support réactif, corrections en moins de 24h.</p>
               </div>
             </div>
             <div class="col-md-4">
               <div class="icon-box wow fadeInUp" data-wow-delay="0.4s"> <i class="fa-solid fa-mobile-alt" aria-hidden="true"></i>
-                <h5>Multiplateforme</h5>
-                <p>Interface multiplateforme via Discord, utilisable sur tout appareil, partout.</p>
+                <h5 data-fr="Multiplateforme" data-en="Cross-platform">Multiplateforme</h5>
+                <p data-fr="Interface multiplateforme via Discord, utilisable sur tout appareil, partout." data-en="Cross-platform interface via Discord, usable on any device, anywhere.">Interface multiplateforme via Discord, utilisable sur tout appareil, partout.</p>
               </div>
             </div>
             <div class="col-md-4">
               <div class="icon-box wow fadeInUp" data-wow-delay="0.6s"> <i class="fa fa-bolt" aria-hidden="true"></i>
-                <h5>Rapidité</h5>
-                <p>Scannez 10 000 ISBNs en moins de 10 minutes.</p>
+                <h5 data-fr="Rapidité" data-en="Fast">Rapidité</h5>
+                <p data-fr="Scannez 10 000 ISBNs en moins de 10 minutes." data-en="Scan 10,000 ISBNs in under 10 minutes.">Scannez 10 000 ISBNs en moins de 10 minutes.</p>
               </div>
             </div>
           </div>
-          <a href="#" class="about-btn" data-scroll-nav="4" title="Quels sites sont scrapés ?">En savoir plus</a> </div>
+          <a href="#" class="about-btn" data-scroll-nav="4" title="Quels sites sont scrapés ?" data-fr="En savoir plus" data-en="Read more" >En savoir plus</a> </div>
       </div>
     </div>
   </div>
@@ -164,31 +184,31 @@
     <div class="row">
       <div class="col-md-12">
         <div class="sectioner-header text-center">
-          <h3>Fonctionnalités</h3>
+          <h3 data-fr="Fonctionnalités" data-en="Features" >Fonctionnalités</h3>
           <span class="line"></span>
-          <p>Découvrez comment Biblioprix optimise chaque étape de votre activité d'achat-revente avec ses fonctionnalités avancées, conçues pour des scans rapides et efficaces.</p>
+          <p data-fr="Découvrez comment Biblioprix optimise chaque étape de votre activité d'achat-revente avec ses fonctionnalités avancées, conçues pour des scans rapides et efficaces." data-en="Discover how Biblioprix optimizes every stage of your buy-to-let activity with advanced features designed for fast, efficient scanning.">Découvrez comment Biblioprix optimise chaque étape de votre activité d'achat-revente avec ses fonctionnalités avancées, conçues pour des scans rapides et efficaces.</p>
         </div>
         <div class="section-content text-center">
           <div class="row">
             <div class="col-md-4 col-sm-12">
               <div class="media single-feature wow fadeInUp" data-wow-delay="0.2s">
                 <div class="media-body text-right media-right-margin">
-                  <h5>Scraping rapide</h5>
-                  <p>Grâce à des serveurs puissants et un code optimisé, nos scans sont extrêmement rapides</p>
+                  <h5 data-fr="Scraping rapide" data-en="Fast scraping">Scraping rapide</h5>
+                  <p data-fr="Grâce à des serveurs puissants et un code optimisé, nos scans sont extrêmement rapides" data-en="Thanks to powerful servers and optimized code, our scans are extremely fast.">Grâce à des serveurs puissants et un code optimisé, nos scans sont extrêmement rapides</p>
                 </div>
                 <div class="media-right icon-border"> <span class="fa-solid fa-gauge-high" aria-hidden="true"></span> </div>
               </div>
               <div class="media single-feature wow fadeInUp" data-wow-delay="0.4s">
                 <div class="media-body text-right media-right-margin">
-                  <h5>Planifier les scans</h5>
-                  <p>Programmez vos scans à l'avance pour une organisation sans effort et une efficacité maximale</p>
+                  <h5 data-fr="Planifier les scans" data-en="Schedule scans">Planifier les scans</h5>
+                  <p data-fr="Programmez vos scans à l'avance pour une organisation sans effort et une efficacité maximale" data-en="Schedule your scans in advance for effortless organization and maximum efficiency">Programmez vos scans à l'avance pour une organisation sans effort et une efficacité maximale</p>
                 </div>
                 <div class="media-right icon-border"> <span class="fa-regular fa-calendar-days" aria-hidden="true"></span> </div>
               </div>
               <div class="media single-feature wow fadeInUp" data-wow-delay="0.6s">
                 <div class="media-body text-right media-right-margin">
-                  <h5>Sortie textuelle</h5>
-                  <p>Les résultats des scans sont fournis en fichiers texte, facilitant la post-utilisation des données avec Excel ou autres</p>
+                  <h5 data-fr="Sortie textuelle" data-en="Text output">Sortie textuelle</h5>
+                  <p data-fr="Les résultats des scans sont fournis en fichiers texte, facilitant la post-utilisation des données avec Excel ou autres" data-en="Scan results are provided as text files, facilitating post-use of the data with Excel or other programs.">Les résultats des scans sont fournis en fichiers texte, facilitant la post-utilisation des données avec Excel ou autres</p>
                 </div>
                 <div class="media-right icon-border"> <span class="fa-solid fa-scroll" aria-hidden="true"></span> </div>
               </div>
@@ -200,22 +220,22 @@
               <div class="media single-feature wow fadeInUp" data-wow-delay="0.2s">
                 <div class="media-left icon-border media-right-margin"> <span class="fa fa-check-double" aria-hidden="true"></span> </div>
                 <div class="media-body text-left">
-                  <h5>Mises à jour régulières</h5>
-                  <p>Nous actualisons régulièrement le système pour améliorer le scraping et maintenir une efficacité contre les nouvelles protections</p>
+                  <h5 data-fr="Mises à jour régulières" data-en="Regular updates">Mises à jour régulières</h5>
+                  <p data-fr="Nous actualisons régulièrement le système pour améliorer le scraping et maintenir une efficacité contre les nouvelles protections" data-en="We regularly update the system to improve scraping and maintain efficiency against new protections.">Nous actualisons régulièrement le système pour améliorer le scraping et maintenir une efficacité contre les nouvelles protections</p>
                 </div>
               </div>
               <div class="media single-feature wow fadeInUp" data-wow-delay="0.4s">
                 <div class="media-left icon-border media-right-margin"> <span class="fa fa-dollar-sign" aria-hidden="true"></span> </div>
                 <div class="media-body text-left">
-                  <h5>Économiser de l'argent</h5>
-                  <p>Le coût mensuel de notre bot de scraping est rapidement amorti, rendant votre investissement rentable dès le premier mois</p>
+                  <h5 data-fr="Économiser de l'argent" data-en="Save money">Économiser de l'argent</h5>
+                  <p data-fr="Le coût mensuel de notre bot de scraping est rapidement amorti, rendant votre investissement rentable dès le premier mois" data-en="The monthly cost of our scraping bot is quickly amortized, making your investment profitable from the very first month.">Le coût mensuel de notre bot de scraping est rapidement amorti, rendant votre investissement rentable dès le premier mois</p>
                 </div>
               </div>
               <div class="media single-feature wow fadeInUp" data-wow-delay="0.6s">
                 <div class="media-left icon-border media-right-margin"> <span class="fa fa-hdd" aria-hidden="true"></span> </div>
                 <div class="media-body text-left">
-                  <h5>Stockage illimité</h5>
-                  <p>Profitez d'un stockage illimité pour vos résultats et vos listes d'ISBN, sans soucis de capacité</p>
+                  <h5 data-fr="Stockage illimité" data-en="Unlimited storage">Stockage illimité</h5>
+                  <p data-fr="Profitez d'un stockage illimité pour vos résultats et vos listes d'ISBN, sans soucis de capacité" data-en="Enjoy unlimited storage for your results and ISBN lists, with no capacity worries">Profitez d'un stockage illimité pour vos résultats et vos listes d'ISBN, sans soucis de capacité</p>
                 </div>
               </div>
             </div>
@@ -233,28 +253,28 @@
     <div class="row">
       <div class="col-md-12">
         <div class="sectioner-header text-center">
-          <h3>Tarifs</h3>
+          <h3 data-fr="Tarifs" data-en="Pricing">Tarifs</h3>
           <span class="line"></span>
-          <p>Explorez nos divers plans tarifaires conçus pour s'adapter à tous les besoins, allant de l'accès gratuit avec fonctionnalités de démo sur Discord, à un tarif préférentiel pour le premier mois, jusqu'à l'accès complet avec toutes les fonctionnalités incluses.</p>
+          <p data-fr="Explorez nos divers plans tarifaires conçus pour s'adapter à tous les besoins, allant de l'accès gratuit avec fonctionnalités de démo sur Discord, à un tarif préférentiel pour le premier mois, jusqu'à l'accès complet avec toutes les fonctionnalités incluses." data-en="Explore our various pricing plans designed to suit every need, from free access with demo features on Discord, to a preferential rate for the first month, to full access with all features included.">Explorez nos divers plans tarifaires conçus pour s'adapter à tous les besoins, allant de l'accès gratuit avec fonctionnalités de démo sur Discord, à un tarif préférentiel pour le premier mois, jusqu'à l'accès complet avec toutes les fonctionnalités incluses.</p>
         </div>
         <div class="section-content text-center">
           <div class="row">
             <div class="col-md-4">
               <div class="team-detail wow bounce" data-wow-delay="0.2s"> <img src="images/etude.png" class="img-fluid"/>
-                <h4>0 € / mois</h4>
-                <p>Accès Gratuit (Démo)</p>
+                <h4 data-fr="0 € / mois" data-en="0 € / month">0 € / mois</h4>
+                <p data-fr="Accès Gratuit (Démo)" data-en="Free access (Demo)">Accès Gratuit (Démo)</p>
               </div>
             </div>
             <div class="col-md-4">
               <div class="team-detail wow bounce" data-wow-delay="0.4s"> <img src="images/livre-ouvert.png" class="img-fluid"/>
-                <h4>300 € / mois</h4>
-                <p>Toutes les fonctionnalités à un tarif préférentiel pour le premier mois</p>
+                <h4 data-fr="300 € / mois" data-en="300 € / month">300 € / mois</h4>
+                <p data-fr="Toutes les fonctionnalités à un tarif préférentiel pour le premier mois" data-en="All features at a preferential rate for the first month">Toutes les fonctionnalités à un tarif préférentiel pour le premier mois</p>
               </div>
             </div>
             <div class="col-md-4">
               <div class="team-detail wow bounce" data-wow-delay="0.6s"> <img src="images/telecharger.png" class="img-fluid"/>
-                <h4>600 € / mois</h4>
-                <p>Accès complet conçu pour les professionnels</p>
+                <h4 data-fr="600 € / mois" data-en="600 € / month">600 € / mois</h4>
+                <p data-fr="Accès complet conçu pour les professionnels" data-en="Complete access for professionals">Accès complet conçu pour les professionnels</p>
               </div>
             </div>
           </div>
@@ -272,9 +292,9 @@
     <div class="row">
       <div class="col-md-12">
         <div class="sectioner-header text-center white">
-          <h3>Sites scrapés</h3>
+          <h3 data-fr="Sites scrapés" data-en="Scraped sites">Sites scrapés</h3>
           <span class="line"></span>
-          <p class="white">Explorez la diversité de notre bot : nous scrapons les prix sur une multitude de plateformes pour vous garantir les meilleures offres disponibles.</p>
+          <p class="white" data-fr="Explorez la diversité de notre bot : nous scrapons les prix sur une multitude de plateformes pour vous garantir les meilleures offres disponibles." data-en="Explore the diversity of our bot: we scrape prices across a multitude of platforms to guarantee you the best deals available.">Explorez la diversité de notre bot : nous scrapons les prix sur une multitude de plateformes pour vous garantir les meilleures offres disponibles.</p>
         </div>
     
       <div class="section-content">
@@ -285,55 +305,55 @@
                 <div class="test-img"><img src="images/momox.png" alt="Placeholder" width="157" height="157"></div>
                 <div class="test-text"><span class="title"><a href="https://www.momox-shop.fr/" target="_blank" rel="noopener" or rel="noreferrer" title="Site de Momox">
                   <span>Momox</span>
-                </a> </span> Quasi leader du marché, Momox offre constamment des restocks de livres d'occasion à des prix avantageux.</div>
+                </a> </span> <span data-fr="Quasi leader du marché, Momox offre constamment des restocks de livres d'occasion à des prix avantageux." data-en="A market leader, Momox consistently offers restocks of used books at competitive prices.">Quasi leader du marché, Momox offre constamment des restocks de livres d'occasion à des prix avantageux.</span></div>
               </div>
               <div class="slider-item">
                 <div class="test-img"><img src="images/vinted.png" alt="Placeholder" width="157" height="157"></div>
                 <div class="test-text"><span class="title"><a href="https://www.vinted.fr/" target="_blank" rel="noopener" or rel="noreferrer" title="Site de Vinted">
                   <span>Vinted</span>
-                </a> </span> Sur Vinted, la culture des prix bas à 3 euros permet souvent de trouver des livres sous-évalués, une aubaine pour les connaisseurs.</div>
+                </a> </span> <span data-fr="Sur Vinted, la culture des prix bas à 3 euros permet souvent de trouver des livres sous-évalués, une aubaine pour les connaisseurs." data-en="On Vinted, a culture of low prices at 3 euros often allows for finding undervalued books, a boon for enthusiasts.">Sur Vinted, la culture des prix bas à 3 euros permet souvent de trouver des livres sous-évalués, une aubaine pour les connaisseurs.</span></div>
               </div>
               <div class="slider-item">
                 <div class="test-img"><img src="images/Amazon_icon.png" alt="Placeholder" width="157" height="157"></div>
                 <div class="test-text"><span class="title"><a href="https://www.amazon.com" target="_blank" rel="noopener" or rel="noreferrer" title="Site de Amazon">
                   <span>Amazon</span>
-                </a> Amazon est une plateforme idéale pour repérer de bonnes affaires auprès de nombreux revendeurs.</div>
+                </a> </span> <span data-fr="Amazon est une plateforme idéale pour repérer de bonnes affaires auprès de nombreux revendeurs." data-en="Amazon is an ideal platform to spot great deals from numerous sellers.">Amazon est une plateforme idéale pour repérer de bonnes affaires auprès de nombreux revendeurs.</span></div>
               </div>
               <div class="slider-item">
                 <div class="test-img"><img src="images/gibert.png" alt="Placeholder" width="157" height="157"></div>
                 <div class="test-text"><span class="title"><a href="https://www.gibert.com/" target="_blank" rel="noopener" or rel="noreferrer" title="Site de Gibert">
                   <span>Gibert</span>
-                </a> </span> Gibert est un excellent site de revente qui inclut aussi les stocks des magasins physiques, parfait pour chasser les bonnes affaires sur place.</div>
+                </a> </span> <span data-fr="Gibert est un excellent site de revente qui inclut aussi les stocks des magasins physiques, parfait pour chasser les bonnes affaires sur place." data-en="Gibert is an excellent resale site that also includes the stocks of physical stores, perfect for hunting bargains on-site.">Gibert est un excellent site de revente qui inclut aussi les stocks des magasins physiques, parfait pour chasser les bonnes affaires sur place.</span></div>
               </div>
               <div class="slider-item">
                 <div class="test-img"><img src="images/rakuten.png" alt="Placeholder" width="157" height="157"></div>
                 <div class="test-text"><span class="title"><a href="https://fr.shopping.rakuten.com/" target="_blank" rel="noopener" or rel="noreferrer" title="Site de Momox">
                   <span>Rakuten</span>
-                </a> </span> Rakuten est le lieu de prédilection pour découvrir des perles rares à des prix compétitifs.</div>
+                </a> </span> <span data-fr="Rakuten est le lieu de prédilection pour découvrir des perles rares à des prix compétitifs." data-en="Rakuten is the go-to place to discover rare finds at competitive prices.">Rakuten est le lieu de prédilection pour découvrir des perles rares à des prix compétitifs.</span></div>
               </div>
               <div class="slider-item">
                 <div class="test-img"><img src="images/recyclivre.jpg" alt="Placeholder" width="157" height="157"></div>
                 <div class="test-text"><span class="title"><a href="https://www.recyclivre.com/" target="_blank" rel="noopener" or rel="noreferrer" title="Site de Recyclivre">
                   <span>Recyclivre</span>
-                </a> </span> Acheter sur Recyclivre c’est non seulement économiser, mais aussi soutenir des associations caritatives.</div>
+                </a> </span> <span data-fr="Acheter sur Recyclivre c’est non seulement économiser, mais aussi soutenir des associations caritatives." data-en="Buying on Recyclivre is not only economical, but also supports charitable associations.">Acheter sur Recyclivre c’est non seulement économiser, mais aussi soutenir des associations caritatives.</span></div>
               </div>
               <div class="slider-item">
                 <div class="test-img"><img src="images/abebooks.png" alt="Placeholder" width="157" height="157"></div>
                 <div class="test-text"><span class="title"><a href="https://www.abebooks.fr/" target="_blank" rel="noopener" or rel="noreferrer" title="Site de Abebooks">
                   <span>Abebooks</span>
-                </a> </span> Abebooks est votre destination pour des livres rares et de collection, souvent à des prix qui restent accessibles.</div>
+                </a> </span> <span data-fr="Abebooks est votre destination pour des livres rares et de collection, souvent à des prix qui restent accessibles." data-en="Abebooks is your destination for rare and collectible books, often at accessible prices.">Abebooks est votre destination pour des livres rares et de collection, souvent à des prix qui restent accessibles.</span></div>
               </div>
               <div class="slider-item">
                 <div class="test-img"><img src="images/ammareal.png" alt="Placeholder" width="157" height="157"></div>
                 <div class="test-text"><span class="title"><a href="https://www.ammareal.fr/" target="_blank" rel="noopener" or rel="noreferrer" title="Site de Ammareal">
                   <span>Ammareal</span>
-                </a> </span> Ammareal vous permet de faire des économies substantielles tout en contribuant à des causes sociales grâce à leur politique de dons.</div>
+                </a> </span> <span data-fr="Ammareal vous permet de faire des économies substantielles tout en contribuant à des causes sociales grâce à leur politique de dons." data-en="Ammareal allows you to make substantial savings while contributing to social causes through their donation policy.">Ammareal vous permet de faire des économies substantielles tout en contribuant à des causes sociales grâce à leur politique de dons.</span></div>
               </div>
               <div class="slider-item">
                 <div class="test-img"><img src="images/labourse.png" alt="Placeholder" width="157" height="157"></div>
                 <div class="test-text"><span class="title"><a href="https://shop.labourseauxlivres.fr/" target="_blank" rel="noopener" or rel="noreferrer" title="Site de La Bourse aux Livres">
                   <span>La Bourse aux Livres</span>
-                </a> </span> La Bourse aux Livres offre des tarifs attractifs sur une vaste sélection de livres, allant des dernières sorties aux classiques intemporels.</div>
+                </a> </span> <span data-fr="La Bourse aux Livres offre des tarifs attractifs sur une vaste sélection de livres, allant des dernières sorties aux classiques intemporels." data-en="La Bourse aux Livres offers attractive prices on a wide selection of books, from the latest releases to timeless classics.">La Bourse aux Livres offre des tarifs attractifs sur une vaste sélection de livres, allant des dernières sorties aux classiques intemporels.</span></div>
               </div>
             </div>
           </div>
@@ -347,42 +367,41 @@
 <!-------Testimonial End-------> 
 
 
-
 <!-------FAQ Start------->
 <section class="faq section-padding prelative" data-scroll-index='5'>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="sectioner-header text-center">
-          <h3>Foire aux questions</h3>
+          <h3 data-fr="Foire aux questions" data-en="Frequently Asked Questions">Foire aux questions</h3>
           <span class="line"></span>
-          <p>Retrouvez ici les réponses aux questions les plus fréquemment posées sur notre service de scraping de livres d'occasion.</p>
+          <p data-fr="Retrouvez ici les réponses aux questions les plus fréquemment posées sur notre service de scraping de livres d'occasion." data-en="Find here the answers to the most frequently asked questions about our used book scraping service.">Retrouvez ici les réponses aux questions les plus fréquemment posées sur notre service de scraping de livres d'occasion.</p>
         </div>
         <div class="section-content">
           <div class="row">
             <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.2s">
-              <h4>Pourquoi vendre des livres d'occasion ?</h4>
-              <p>Le marché du livre d'occasion est en <b>croissance constante</b>. De plus, <b>la loi permet de fixer librement les prix des livres d'occasion</b>, contrairement aux livres neufs.</p>
+              <h4 data-fr="Pourquoi vendre des livres d'occasion ?" data-en="Why sell used books?">Pourquoi vendre des livres d'occasion ?</h4>
+              <p data-fr="Le marché du livre d'occasion est en croissance constante. De plus, la loi permet de fixer librement les prix des livres d'occasion, contrairement aux livres neufs." data-en="The used book market is constantly growing. Moreover, the law allows the free pricing of used books, unlike new books.">Le marché du livre d'occasion est en croissance constante. De plus, la loi permet de fixer librement les prix des livres d'occasion, contrairement aux livres neufs.</p>
             </div>
             <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.2s">
-              <h4>Comment débuter dans l'achat-revente de livres ?</h4>
-              <p>Lancer un commerce d'achat-revente de livres est <b>accessible à tous</b>. Il suffit de créer une entreprise et de s'inscrire comme vendeur sur des plateformes comme Amazon. Achetez ensuite des livres, préparez les envois pour Amazon, et gérez votre stock.</p>
+              <h4 data-fr="Comment débuter dans l'achat-revente de livres ?" data-en="How to start in the buy-resell books business?">Comment débuter dans l'achat-revente de livres ?</h4>
+              <p data-fr="Lancer un commerce d'achat-revente de livres est accessible à tous. Il suffit de créer une entreprise et de s'inscrire comme vendeur sur des plateformes comme Amazon. Achetez ensuite des livres, préparez les envois pour Amazon, et gérez votre stock." data-en="Starting a book buy-resell business is accessible to everyone. Simply create a business and register as a seller on platforms such as Amazon. Then buy books, prepare shipments for Amazon, and manage your stock.">Lancer un commerce d'achat-revente de livres est accessible à tous. Il suffit de créer une entreprise et de s'inscrire comme vendeur sur des plateformes comme Amazon. Achetez ensuite des livres, préparez les envois pour Amazon, et gérez votre stock.</p>
             </div>
             <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.4s">
-              <h4>Le scraping est-il légal ?</h4>
-              <p><b>Oui, le scraping est légal</b> tant que les données scrapées sont accessibles publiquement et ne se trouvent pas derrière un espace de connexion requérant des identifiants.</p>
+              <h4 data-fr="Le scraping est-il légal ?" data-en="Is scraping legal?">Le scraping est-il légal ?</h4>
+              <p data-fr="Oui, le scraping est légal tant que les données scrapées sont accessibles publiquement et ne se trouvent pas derrière un espace de connexion requérant des identifiants." data-en="Yes, scraping is legal as long as the scraped data are publicly accessible and not behind a login space requiring credentials.">Oui, le scraping est légal tant que les données scrapées sont accessibles publiquement et ne se trouvent pas derrière un espace de connexion requérant des identifiants.</p>
             </div>
             <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.4s">
-              <h4>Quel est le tarif mensuel de l'abonnement ?</h4>
-              <p>Nous proposons un abonnement mensuel. Le premier mois est tarifé à 300 euros pour permettre aux nouveaux utilisateurs de se familiariser avec le service, puis le coût est de <b>600 euros par mois</b>.</p>
+              <h4 data-fr="Quel est le tarif mensuel de l'abonnement ?" data-en="What is the monthly subscription rate?">Quel est le tarif mensuel de l'abonnement ?</h4>
+              <p data-fr="Nous proposons un abonnement mensuel. Le premier mois est tarifé à 300 euros pour permettre aux nouveaux utilisateurs de se familiariser avec le service, puis le coût est de 600 euros par mois." data-en="We offer a monthly subscription. The first month is priced at 300 euros to allow new users to familiarize themselves with the service, then the cost is 600 euros per month.">Nous proposons un abonnement mensuel. Le premier mois est tarifé à 300 euros pour permettre aux nouveaux utilisateurs de se familiariser avec le service, puis le coût est de 600 euros par mois.</p>
             </div>
             <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.6s">
-              <h4>Votre service est-il en expansion ?</h4>
-              <p>Absolument, notre bot est en constante évolution. Après avoir solidement établi notre présence sur le marché français, notre prochaine étape est l'<b>expansion internationale</b>.</p>
+              <h4 data-fr="Votre service est-il en expansion ?" data-en="Is your service expanding?">Votre service est-il en expansion ?</h4>
+              <p data-fr="Absolument, notre bot est en constante évolution. Après avoir solidement établi notre présence sur le marché français, notre prochaine étape est l'expansion internationale." data-en="Absolutely, our bot is constantly evolving. After firmly establishing our presence in the French market, our next step is international expansion.">Absolument, notre bot est en constante évolution. Après avoir solidement établi notre présence sur le marché français, notre prochaine étape est l'expansion internationale.</p>
             </div>
             <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.6s">
-              <h4>Existe-t-il une communauté pour échanger avec d'autres revendeurs ?</h4>
-              <p><b>Oui, notre plateforme intègre un espace de discussion</b> où les revendeurs peuvent échanger conseils, techniques et informations sur les livres, favorisant ainsi une communauté dynamique et supportrice.</p>
+              <h4 data-fr="Existe-t-il une communauté pour échanger avec d'autres revendeurs ?" data-en="Is there a community to interact with other resellers?">Existe-t-il une communauté pour échanger avec d'autres revendeurs ?</h4>
+              <p data-fr="Oui, notre plateforme intègre un espace de discussion où les revendeurs peuvent échanger conseils, techniques et informations sur les livres, favorisant ainsi une communauté dynamique et supportrice." data-en="Yes, our platform includes a discussion space where resellers can exchange tips, techniques, and information about books, thus fostering a dynamic and supportive community.">Oui, notre plateforme intègre un espace de discussion où les revendeurs peuvent échanger conseils, techniques et informations sur les livres, favorisant ainsi une communauté dynamique et supportrice.</p>
             </div>
           </div>
         </div>
@@ -390,8 +409,8 @@
     </div>
   </div>
 </section>
+<!-------FAQ End------->
 
-<!-------FAQ End-------> 
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
@@ -419,9 +438,9 @@
     <div class="row">
       <div class="col-md-12">
         <div class="sectioner-header text-center">
-          <h3>Planifiez une démo</h3>
+          <h3 data-fr="Planifiez une démo" data-en="Schedule a Demo">Planifiez une démo</h3>
           <span class="line"></span>
-          <p>Connectons-nous ! Retrouvez-nous sur nos différents canaux de communication et parlons de vos besoins.</p>
+          <p data-fr="Connectons-nous ! Retrouvez-nous sur nos différents canaux de communication et parlons de vos besoins." data-en="Let's connect! Find us on our various communication channels and let's discuss your needs.">Connectons-nous ! Retrouvez-nous sur nos différents canaux de communication et parlons de vos besoins.</p>
         </div>
         <div class="section-content">
           <div class="row">
@@ -430,21 +449,21 @@
                     <div class="contact-item media">
                         <div class="media-body">
                             <i class="fa fa-envelope" style="margin-right: 10px;"></i>
-                            <p class="text-uppercase">Par mail</p>
+                            <p class="text-uppercase" data-fr="Par mail" data-en="By Email">Par mail</p>
                             <p class="text-uppercase"><a class="text-white" id="email-link" href="#">Chargement...</a></p>
                         </div>
                     </div>
                     <div class="contact-item media">
                         <div class="media-body">
                             <i class="fa-brands fa-discord" style="margin-right: 10px;"></i>
-                            <p class="text-uppercase">Par Discord</p>
+                            <p class="text-uppercase" data-fr="Par Discord" data-en="Via Discord">Par Discord</p>
                             <p class="text-uppercase"><a class="text-white" id="discord-link" href="#">Chargement...</a></p>
                         </div>
                     </div>
                     <div class="contact-item media">
                         <div class="media-body">
                             <i class="fa-brands fa-twitter" style="margin-right: 10px;"></i>
-                            <p class="text-uppercase">Par Twitter</p>
+                            <p class="text-uppercase" data-fr="Par Twitter" data-en="On Twitter">Par Twitter</p>
                             <p class="text-uppercase"><a class="text-white" href="https://twitter.com/biblioprix" target="_blank">@Biblioprix</a></p>
                         </div>
                     </div>
@@ -459,8 +478,8 @@
     </div>
   </div>
 </section>
+<!-------Contact End------->
 
-<!-------Contact End-------> 
 
 <!-------Download End------->
 <section class="download section-padding">
@@ -468,16 +487,16 @@
     <div class="row">
       <div class="col-md-12">
         <div class="sectioner-header text-center white">
-          <h3>À très bientôt !</h3>
+          <h3 data-fr="À très bientôt !" data-en="See You Soon!">À très bientôt !</h3>
           <span class="line"></span>
-          <p class="white">Pourquoi ne pas tenter l'aventure ? D'énormes opportunités vous attendent dans l'achat-revente de livres. N'hésitez plus, lancez-vous et découvrez les possibilités !</p>
+          <p class="white" data-fr="Pourquoi ne pas tenter l'aventure ? D'énormes opportunités vous attendent dans l'achat-revente de livres. N'hésitez plus, lancez-vous et découvrez les possibilités !" data-en="Why not take the plunge? Huge opportunities await you in the book buy-resell market. Don't hesitate, get started and discover the possibilities!">Pourquoi ne pas tenter l'aventure ? D'énormes opportunités vous attendent dans l'achat-revente de livres. N'hésitez plus, lancez-vous et découvrez les possibilités !</p>
         </div>
       </div>
     </div>
   </div>
 </section>
-
 <!-------Download End------->
+
 
 <footer class="footer-copy">
   <div class="container-fluid">
@@ -489,6 +508,16 @@
   </div>
 </footer>
 
+<script>
+  function setLanguage(lang) {
+  document.querySelectorAll('[data-fr], [data-en]').forEach(el => {
+    el.textContent = el.getAttribute(`data-${lang}`);
+  });
+  // Change le drapeau du bouton dropdown
+  var navbarFlag = document.querySelector('#navbarDropdownMenuLink img');
+  navbarFlag.src = lang === 'fr' ? 'images/fr.png' : 'images/en.png';
+}
+  </script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script> 

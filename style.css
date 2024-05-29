@@ -510,6 +510,12 @@ input {
 	width: 150px;
 	border-radius: 7px;
 }
+.flag-icon {
+    width: 30px;  /* Taille réduite pour s'intégrer dans la barre de navigation */
+    height: 20px; /* Taille réduite pour correspondre à la largeur */
+    object-fit: cover;
+}
+
 .footer-copy {
 	background: #ffffff;
 	color: #242424;
@@ -670,4 +676,18 @@ h3 {
     width: 190px;  
     height: auto; 
     object-fit: contain;  
+}
+
+.navbar .dropdown-menu {
+    background: #fff;  /* Couleur de fond du menu déroulant */
+    border: none;  /* Supprime les bordures si nécessaire */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);  /* Ajoute une légère ombre pour la séparation visuelle */
+    min-width: 100px;  /* Réduire la largeur minimale selon les besoins */
+    width: auto;  /* Assurez-vous que la largeur s'ajuste au contenu */
+    padding: 5px 0;  /* Réduit le padding vertical pour moins d'espace vide */
+}
+
+.navbar .dropdown-item {
+    padding: 5px 10px;  /* Réduit le padding pour chaque élément de la liste, ajustez au besoin */
+    text-align: center;  /* Centre le texte ou l'image dans le menu déroulant */
 }
